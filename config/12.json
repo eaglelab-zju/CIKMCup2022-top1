@@ -1,0 +1,15 @@
+{
+    "lr": 0.003,
+    "emb_dim": 256,
+    "drop_ratio": 0.1,
+    "model": "GNN-dgl",
+    "jk": "cat",
+    "readout": "mean",
+    "optimizer": "AdamW",
+    "weight_decat": 0,
+    "num_epoch": 500,
+    "num_layers": 5,
+    "self_loop": true,
+    "appnp": false,
+    "degree": true
+}

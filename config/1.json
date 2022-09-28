@@ -1,0 +1,13 @@
+{
+    "model": "GINE_S",
+    "jk": "sum",
+    "readout": "max",
+    "lr": 0.0007739063877908606,
+    "num_layers":3,
+    "num_epoch": 300,
+    "batch_size": 0,
+    "drop_ratio": 0.014568991972319978,
+    "emb_dim": 128,
+    "self_loop": true,
+    "add_attr": true
+}

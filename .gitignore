@@ -1,0 +1,17 @@
+!save/data/raw/Readme.md
+!save/prediction/Readme.md
+!save/s_model/Readme.md
+!save/result/Readme.md
+save/data/raw/*
+save/prediction/*
+save/s_model/*
+save/data/.dgl
+save/result/*
+save/submit.csv
+!Readme.md
+
+__pycache__
+*/__pycache__
+graphmae/models/__pycache__/
+
+*.pyc

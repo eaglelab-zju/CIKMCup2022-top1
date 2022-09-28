@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/server_struct.py --device 0  > save/result/'fed.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 1 --cfg config/1.json --train-all > save/result/'1_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 2 --cfg config/2.json --train-all > save/result/'2_all.txt' 
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 2 --cfg config/2_1.json --train-all --pretrain > save/result/'2_1_all.txt' 
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 2 --cfg config/2_2.json --train-all > save/result/'2_2_all.txt' 
+python scripts/model_merge.py --client_id=2 --model_num=3
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 3 --cfg config/3.json --train-all --pretrain > save/result/'3_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 4 --cfg config/4.json --train-all > save/result/'4_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 5 --cfg config/5.json --train-all > save/result/'5_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 5 --cfg config/5_1.json --train-all > save/result/'5_1_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 5 --cfg config/5_2.json --train-all > save/result/'5_2_all.txt'
+python scripts/model_merge.py --client_id=5 --model_num=3
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 6 --cfg config/6.json --train-all > save/result/'6_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 7 --cfg config/7.json --train-all > save/result/'7_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 8 --cfg config/8.json --train-all > save/result/'8_all.txt'

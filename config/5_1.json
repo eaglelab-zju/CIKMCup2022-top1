@@ -1,0 +1,13 @@
+{
+    "jk": "concat",
+    "readout": "mean",
+    "lr": 1e-3,
+    "num_epoch": 500,
+    "batch_size": 0,
+    "drop_ratio": 0.1,
+    "emb_dim": 64,
+    "self_loop": true,
+    "model": "GINE_S",
+    "loss": "focal",
+    "prediction_path": "save/prediction/submit_5_1.csv"
+}

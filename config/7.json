@@ -1,0 +1,11 @@
+{
+    "readout": "max",
+    "lr": 0.002,
+    "emb_dim": 64,
+    "drop_ratio": 0.1,
+    "num_epoch": 400,
+    "batch_size": 0,
+    "num_layers": 5,
+    "self_loop": true,
+    "loss": "focal"
+}

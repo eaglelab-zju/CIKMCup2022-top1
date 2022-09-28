@@ -1,0 +1,11 @@
+{
+    "model": "GINE_S",
+    "jk": "concat",
+    "readout": "mean",
+    "lr": 1e-3,
+    "num_epoch": 500,
+    "batch_size": 0,
+    "emb_dim": 128,
+    "drop_ratio": 0.2,
+    "self_loop": true
+}

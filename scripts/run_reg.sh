@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 9 --cfg config/9.json --train-all > save/result/'9_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 10 --cfg config/10.json --train-all > save/result/'10_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 11 --cfg config/11.json --train-all > save/result/'11_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 12 --cfg config/12.json --train-all > save/result/'12_all.txt'
+CUDA_VISIBLE_DEVICES=0 python Fed_learn/client.py 13 --cfg config/13.json --train-all > save/result/'13_all.txt'

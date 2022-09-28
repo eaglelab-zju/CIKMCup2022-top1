@@ -1,0 +1,13 @@
+{
+    "jk": "sum",
+    "readout": "attention",
+    "lr": 0.003,
+    "emb_dim": 256,
+    "num_layers": 5,
+    "num_epoch": 350,
+    "batch_size": 0,
+    "drop_ratio": 0.3,
+    "self_loop": true,
+    "scheduler": "StepLR",
+    "prediction_path": "save/prediction/submit_2_2.csv"
+}

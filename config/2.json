@@ -1,0 +1,12 @@
+{
+    "model": "GINE_S",
+    "jk": "last",
+    "readout": "sum",
+    "lr": 0.0006,
+    "emb_dim": 64,
+    "drop_ratio": 0.4,
+    "num_epoch": 300,
+    "batch_size": 0,
+    "loss": "focal",
+    "prediction_path": "save/prediction/submit_2_0.csv"
+}
